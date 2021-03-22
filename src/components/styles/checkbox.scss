@@ -1,16 +1,11 @@
 @import './general/common.scss';
 
 .chkbx {
-  .hello {
-    @include fnt-simpletext14;
-  }
-
   .inputchkbx {
     display: none;
   }
 
   .labelchkbx {
-    @include fnt-simpletext14;
     color: $strongtext;
     display: block;
     position: relative;
@@ -22,7 +17,7 @@
 
   .labelchkbx::before {
     @include positioner(row, center, center);
-    content: url("/dist/images/checkmark.svg");
+    // content: url("/dist/images/checkmark.svg");
     color: transparent;
     position: absolute;
     width: 26px;
