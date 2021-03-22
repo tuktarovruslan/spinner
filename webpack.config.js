@@ -53,9 +53,9 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist/scripts"),
     filename: "[name].[hash].js",
-    publicPath: "/"
+    publicPath: "/scripts/"
   },
   watch: NODE_ENV == 'development',
   devtool: NODE_ENV == 'development' ? 'source-map' : false,

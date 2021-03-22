@@ -1,0 +1,43 @@
+@mixin positioner($direction, $mainaxis, $subaxis, $wrapping: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $mainaxis;
+  align-items: $subaxis;
+  flex-wrap: $wrapping;
+}
+
+@mixin flex($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin narrower($width, $padding: 0px, $margin: auto) {
+  max-width: $width + 2 * $padding;
+  width: 100%;
+  margin-left: $margin;
+  margin-right: $margin;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin grid($columns, $rows: none) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+@mixin gcxy($xalign, $yalign: none) {
+  justify-content: $xalign;
+  align-content: $yalign;
+}
+
+@mixin gcixy($xalign, $yalign: none) {
+  justify-items: $xalign;
+  align-items: $yalign;
+}
+
+@mixin gexy($xalign, $yalign: none) {
+  justify-self: $xalign;
+  align-self: $yalign;
+}

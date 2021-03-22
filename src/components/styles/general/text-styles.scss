@@ -1,0 +1,178 @@
+@import 'fonts';
+
+@mixin fnt-ultimate56b {
+    font-family: GothamPro-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 60px;
+}
+
+@mixin fnt-macro56 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 60px;
+}
+
+@mixin fnt-macro48 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 50px;
+}
+
+@mixin fnt-macro36 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+@mixin fnt-heading36b {
+    font-family: GothamPro-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+@mixin fnt-heading28b {
+    font-family: GothamPro-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 24px;
+}
+
+@mixin fnt-heading22b {
+    font-family: GothamPro-Bold, GothamProR-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+@mixin fnt-largetext22 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+@mixin fnt-quotes21 {
+    font-family: GothamPro-Italic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+@mixin fnt-largetext20 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@mixin fnt-text18b {
+    font-family: GothamPro-Bold, GothamProR-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+}
+
+@mixin fnt-pagetext18 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+@mixin fnt-text16b {
+    font-family: GothamPro-Bold, GothamProR-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin fnt-pagetext16 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin fnt-remtext16 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+
+@mixin fnt-menu14 {
+    font-family: GothamPro-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+}
+
+@mixin fnt-simpletext14 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@mixin fnt-tip14b {
+    font-family: GothamPro-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+@mixin fnt-tip12b {
+    font-family: GothamPro-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+@mixin fnt-tip12 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+@mixin fnt-micro10 {
+    font-family: GothamPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+}

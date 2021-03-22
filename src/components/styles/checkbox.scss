@@ -1,0 +1,66 @@
+@import './general/common.scss';
+
+.chkbx {
+  .hello {
+    @include fnt-simpletext14;
+  }
+
+  .inputchkbx {
+    display: none;
+  }
+
+  .labelchkbx {
+    @include fnt-simpletext14;
+    color: $strongtext;
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    padding-left: 38px;
+    cursor: pointer;
+  }
+
+  .labelchkbx::before {
+    @include positioner(row, center, center);
+    content: url("/dist/images/checkmark.svg");
+    color: transparent;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    padding-right: 1px;
+    border-radius: 4px;
+    transition: 0.2s;
+    background: $workspace;
+    border: 2px solid $textlight;
+    overflow: hidden;
+    left: 0;
+    box-sizing: inherit;
+  }
+
+  .inputchkbx:checked + .labelchkbx::before {
+    background: $textlight;
+    transition: 0.2s;
+  }
+
+  .labelchkbx:hover::before {
+    border: 2px solid $logo;
+  }
+
+  .inputchkbx:checked + .labelchkbx:hover::before {
+    background: $logo;
+  }
+}
+
+.chkbx.invalid {
+
+  .labelchkbx::before {
+    content: "";
+    background: rgba(255, 8, 67, 0.05);
+    border: 2px solid rgba(255, 8, 67, 0.2);
+  }
+
+  .labelchkbx:hover::before {
+    background: $workspace;
+    border: 2px solid $textlight;
+  }
+}

@@ -2,7 +2,7 @@ import { Dispatch } from "react"
 import { RoomAction, RoomActionTypes } from "../../types/room"
 
 export const fetchItems = () => {
-  return async (dispatch: Dispatch<RoomAction>) => {
+  return async (dispatch: Dispatch<RoomAction>) => { // типизация диспетчера
     try {
       dispatch({type: RoomActionTypes.FETCH_ITEMS})
       // const response = await запрос на бек todo
