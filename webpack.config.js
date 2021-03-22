@@ -31,11 +31,16 @@ module.exports = {
 				enforce: "pre"
 			},
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         use: [
+          'style-loader',
           'css-loader',
           'sass-loader'
         ]
+      },
+      {
+        test: /\.(jpg|jpeg|png|svg)$/,
+        use: ['file-loader']
       },
     ],
   },
@@ -55,6 +60,7 @@ module.exports = {
   watch: NODE_ENV == 'development',
   devtool: NODE_ENV == 'development' ? 'source-map' : false,
   devServer: {
+    port:3000,
     contentBase: "./dist",
   },
   plugins: plugins(),
